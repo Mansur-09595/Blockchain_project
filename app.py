@@ -20,5 +20,5 @@ def index():
     return "Hello world !"
 
 if __name__ =='__main__':
-    app.secret_key = 'secret123'
+    app.secret_key = secret_key
     app.run(debug=True)
