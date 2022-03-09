@@ -1,7 +1,5 @@
 from hashlib import sha256
 
-from markupsafe import re
-
 def updatehash(*args):
     hashing_text = ""; h = sha256()
     for arg in args:
