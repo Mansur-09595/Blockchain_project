@@ -21,6 +21,7 @@ mysql = MySQL(app)
 
 @app.route("/")
 def index():
+    #send_money("Mansur", "John", 20)
     return render_template('index.html')
 
 def is_logged_in(f):
