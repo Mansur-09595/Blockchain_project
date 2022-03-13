@@ -1,13 +1,29 @@
 <!DOCTYPE html>
+<!--ADAPTED FROM TEMPLATE at https://getbootstrap.com/docs/4.0/components/card/-->
+
 <html lang="en">
 
   <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
     <title>Shockwave - Login</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+
   </head>
 
-  <body>
+  <body class="bg-dark">
 
     <div class="container">
+      <div class="card card-login mx-auto mt-5">
+        <div class="card-header">Login</div>
+        <div class="card-body">
+
           {% include 'includes/_messages.html' %}
           <form action="" method="POST">
             <div class="form-group">
@@ -24,8 +40,20 @@
             </div>
             <button type="submit" class="btn btn-primary btn-block">Login</button>
           </form>
+
+
+          <div class="text-center">
+            <a class="d-block small mt-3" href="register">Don't have an account? Register now.</a>
+            <a class="d-block small mt-3" href="/">Home Page</a>
+          </div>
+        </div>
+      </div>
     </div>
 
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js" integrity="sha384-1CmrxMRARb6aLqgBO7yyAxTOQE2AKb9GfXnEo760AUcUmFx3ibVJJAzGytlQcNXd" crossorigin="anonymous"></script>
+  
   </body>
 
 </html>

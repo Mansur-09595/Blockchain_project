@@ -1,3 +1,6 @@
+{% extends '_base.html' %}
+
+{% block body %}
 {% include 'includes/_messages.html' %}
 <p>Your current balance is {{ balance }} SHK</p>
 {% from "includes/_formhelpers.html" import render_field %}
@@ -11,3 +14,4 @@
   </br>
   <p><input type="submit" class="btn btn-primary" value="Send"></p>
 </form>
+{% endblock %}

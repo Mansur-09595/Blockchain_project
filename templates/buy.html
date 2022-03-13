@@ -1,5 +1,8 @@
+{% extends '_base.html' %}
+
+{% block body %}
 {% include 'includes/_messages.html' %}
-<p>Your current balance is {{ balance }} SHK</p>
+<p>Ваш текущий баланс {{ balance }} SHK</p>
 {% from "includes/_formhelpers.html" import render_field %}
 <form action="" method="POST">
   <div class="form-group">
@@ -7,5 +10,6 @@
       {{render_field(form.amount, class_="form-control")}}
     </div>
   </div>
-  <button type="submit" class="btn btn-primary btn-block">Buy Now</button>
+  <button type="submit" class="btn btn-primary btn-block">Купить сейчас</button>
 </form>
+{% endblock %}
